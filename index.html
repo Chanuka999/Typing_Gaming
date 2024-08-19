@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style src="stylesheet" href="style.css"></style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body id="body">
     <h1>Typing Game</h1>
-    
-    
-        <h2 id="display" style="padding: 20px;">key</h2>
-        <div class="game-section">
-        <div class=" score" style="background-color: seagreen;">
+    <div class=" circle">
+        X
+    </div>
+    <div class=" score-section" >
+        <div class=" score" style="background-color: rgb(205, 180, 36);">
             <p>Correct</p>
             <p id="correct">0</p>
         </div>
-        <div class=" score" style="background-color: brown;">
+        <div class=" score" style="background-color: rgb(241, 68, 10);">
+            <p>Miss</p>
+            <p id="miss">0</p>
+        </div>
+        <div class=" score" style="background-color: rgb(163, 17, 66);">
             <p>Wrong</p>
             <p id="wrong">0</p>
         </div>
+     
     </div>
-   
+    <progress id="progress" value="0" max="100"></progress>
+    <label for="speed" ><b>speed</b></label>
+    <input type="range" id="speed" min="100" max="1000">
      <script src="index.js"></script>
 </body>
 </html>
